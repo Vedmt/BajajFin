@@ -15,7 +15,7 @@ app.get('/', (req, res) => {
 });
 
 // POST route to handle data
-app.post('/bfhl', (req, res) => {
+app.post('/', (req, res) => {
   const data = req.body.data || [];
   const numbers = data.filter(item => !isNaN(item));
   const alphabets = data.filter(item => isNaN(item));
